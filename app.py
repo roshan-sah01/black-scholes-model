@@ -74,6 +74,7 @@ col3.metric("Delta", f"{delta_value:.6f}")
 col4.metric("Gamma", f"{greeks_call['gamma']:.6f}")
 col5.metric("Vega", f"{greeks_call['vega']:.6f}")
 
+
 #Heatmap Sidebar Inputs
 st.sidebar.header("Heatmap Settings")
 
@@ -162,3 +163,14 @@ st.caption(
     "Model assumptions: European options, constant volatility and interest rate, no dividends."
 )
 
+#Socials
+st.markdown(
+    """
+    <div style="text-align:center; opacity:0.85; padding-top:12px;">
+      Built by <b>Roshan Sah</b> ·
+      <a href="https://github.com/roshan-sah01/black-scholes-model" target="_blank">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-HERE/" target="_blank">LinkedIn</a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
